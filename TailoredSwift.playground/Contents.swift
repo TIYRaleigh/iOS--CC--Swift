@@ -132,10 +132,7 @@ import UIKit
 
 //class TestDataSource : NSObject, UITableViewDataSource
 //{
-//    let sortedCaptains = sorted(moreCaptains, {
-//        (str1: String, str2: String) -> Bool in
-//        return str1 < str2
-//    })
+//    let sortedCaptains = moreCaptains.sort()
 //    
 //    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 //    {

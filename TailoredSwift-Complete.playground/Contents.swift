@@ -3,7 +3,7 @@
 //
 
 let helloString = "Hello, World!"
-println(helloString)
+print(helloString)
 
 // A single line comment is one with two slashes as the first characters
 /* 
@@ -16,17 +16,17 @@ println(helloString)
 // Semi-colons, not required, unless you place multiple instructions on the same line
 //
 
-let greeting = "Hello"; println(greeting)
+let greeting = "Hello"; print(greeting)
 
 //
 // Identifiers, first character A-Z or a-z or _, followed by any of these plus 0-9
 //
 
 let theIronYard = "awesome", tiy100 = "100%", _travelBack = "1985"
-println("The Iron Yard is \(tiy100) \(theIronYard).")
+print("The Iron Yard is \(tiy100) \(theIronYard).")
 
 let 你好 = "你好世界"
-println(你好)
+print(你好)
 
 //
 // Constants are declared with 'let' keyword
@@ -120,11 +120,11 @@ let oneQuarter = 2.5
 
 if ten == twentyPercent
 {
-    println("values are equal")
+    print("values are equal")
 }
 else
 {
-    println("values are not equal")
+    print("values are not equal")
 }
 
 //
@@ -145,16 +145,16 @@ let sameCaptains = ["Malcolm Reynolds", "Jean-Luc Picard", "James T. Kirk", "Han
 
 if shipCaptains == sameCaptains
 {
-    println("Arrays are equal")
+    print("Arrays are equal")
 }
 else
 {
-    println("Arrays are not equal")
+    print("Arrays are not equal")
 }
 
 var moreCaptains = shipCaptains
 moreCaptains.append("Kathryn Janeway")
-println(moreCaptains)
+print(moreCaptains)
 
 moreCaptains[3]
 
@@ -175,7 +175,7 @@ evens
 var occupations = ["Malcolm": "Captain", "Kaylee": "Mechanic"]
 occupations["Malcolm"]
 occupations["Jayne"] = "Public Relations"
-println(occupations)
+print(occupations)
 
 //
 // Control flow
@@ -195,7 +195,7 @@ for score in individualScores
         teamScore += 1
     }
 }
-println(teamScore)
+print(teamScore)
 
 // switch
 
@@ -220,10 +220,7 @@ import UIKit
 
 class TestDataSource : NSObject, UITableViewDataSource
 {
-    let sortedCaptains = sorted(moreCaptains, {
-        (str1: String, str2: String) -> Bool in
-        return str1 < str2
-    })
+    let sortedCaptains = moreCaptains.sort()
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
