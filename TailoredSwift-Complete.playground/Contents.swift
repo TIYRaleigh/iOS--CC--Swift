@@ -127,8 +127,6 @@ occupations["Malcolm"]
 occupations["Jayne"] = "Public Relations"
 print(occupations)
 
-//: Control flow
-
 //: for loop
 
 let individualScores = [75, 43, 103, 87, 12]
