@@ -171,8 +171,11 @@ default:
 }
 
 //: Testing a UIKit component in a playground
-
 import UIKit
+
+import XCPlayground
+
+XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
 
 class TestDataSource : NSObject, UITableViewDataSource
 {
@@ -192,9 +195,8 @@ class TestDataSource : NSObject, UITableViewDataSource
         return cell
     }
 }
-
 let testDataSource = TestDataSource()
 let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 320, height: 320), style: .Plain)
 tableView.dataSource = testDataSource
 tableView.reloadData()
-
+//XCPlaygroundPage.currentPage.liveView = tableView
