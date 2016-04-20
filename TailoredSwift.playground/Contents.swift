@@ -1,12 +1,12 @@
 /*:
-![Remote Image](http://theironyard.com/images/home/tiy-logo.png)
+![Remote Image](http://photos3.meetupstatic.com/photos/event/9/8/5/7/global_442538999.jpeg)
 
 ## Intro to Swift Playgrounds
 
 ### Resources
 
 - [The Iron Yard](http://www.theironyard.com)
-- [Iron Yard Meetups](http://www.meetup.com/The-Iron-Yard-Orlando/)
+- [Iron Yard Meetups](http://www.meetup.com/The-Iron-Yard-Raleigh/)
 - [Playgrounds via Ray Wenderlich](http://www.raywenderlich.com/115253/swift-2-tutorial-a-quick-start)
 - [XCPlaygrounds via NSHipster](http://nshipster.com/xcplayground/)
 
@@ -80,7 +80,12 @@ print(你好)
 
 //: Testing a UIKit component in a playground
 
+//: Testing a UIKit component in a playground
 //import UIKit
+//
+//import XCPlayground
+//
+//XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
 //
 //class TestDataSource : NSObject, UITableViewDataSource
 //{
@@ -100,5 +105,9 @@ print(你好)
 //        return cell
 //    }
 //}
-
+//let testDataSource = TestDataSource()
+//let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 320, height: 320), style: .Plain)
+//tableView.dataSource = testDataSource
+//tableView.reloadData()
+//XCPlaygroundPage.currentPage.liveView = tableView
 
